@@ -1,0 +1,243 @@
+.rmPage {
+  min-height: 100vh;
+  padding: 28px;
+}
+
+.rmShell {
+  max-width: 980px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 26px 28px 34px;
+}
+
+.rmTop {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.rmBackBtn {
+  width: 50px;
+  height: 42px;
+  border: none;
+  border-radius: 10px;
+  background: #F4EEFA;
+  color: #6E1372;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.rmTopText {
+  min-width: 0;
+}
+
+.rmTitle {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1d2d44;
+}
+
+.rmSubtitle {
+  margin: 6px 0 0;
+  font-size: 15px;
+  color: #4f5f74;
+}
+
+.rmJobHeader {
+  margin-top: 8px;
+  margin-bottom: 14px;
+}
+
+.rmJobTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #25364d;
+  margin-bottom: 6px;
+}
+
+.rmApplicantsText {
+  font-size: 15px;
+  color: #59687c;
+  font-weight: 500;
+}
+
+.rmDivider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 14px 0 22px;
+}
+
+.rmCandidatesList {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.rmCandidateCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.rmCardLeft {
+  flex-shrink: 0;
+}
+
+.rmAvatarBox {
+  width: 110px;
+  height: 110px;
+  border-radius: 6px;
+  background: #F4EEFA;
+  color: #6E1372;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.rmCardCenter {
+  flex: 1;
+  min-width: 0;
+}
+
+.rmCandidateTopRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.rmCandidateName {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2f46;
+}
+
+.rmMatchBadge {
+  min-width: 128px;
+  text-align: center;
+  padding: 10px 16px;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.rmMatchBadge.green {
+  background: #10a64a;
+}
+
+.rmMatchBadge.yellow {
+  background: #dca61c;
+}
+
+.rmMatchBadge.gray {
+  background: #8b95a7;
+}
+
+.rmLine {
+  height: 1px;
+  background: #eceff3;
+  margin: 14px 0;
+}
+
+.rmSkillsLabel {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2c3e55;
+  margin-bottom: 6px;
+}
+
+.rmSkillsText {
+  font-size: 15px;
+  color: #43556d;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.rmActions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.rmBtn {
+  min-width: 140px;
+  border-radius: 6px;
+  padding: 11px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.rmBtn.primary {
+  background: #6E1372;
+  color: #fff;
+}
+
+.rmBtn.primary:hover {
+  background: #9462A1;
+}
+
+.rmBtn.secondary {
+  background: #f1f3f5;
+  color: #1f2937;
+  border-color: #d1d5db;
+}
+
+.rmBtn.secondary:hover {
+  background: #e5e7eb;
+}
+
+.rmState {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  color: #667085;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .rmPage {
+    padding: 16px;
+  }
+
+  .rmShell {
+    padding: 18px;
+  }
+
+  .rmCandidateCard {
+    flex-direction: column;
+  }
+
+  .rmAvatarBox {
+    width: 88px;
+    height: 88px;
+    font-size: 30px;
+  }
+
+  .rmCandidateTopRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .rmMatchBadge {
+    min-width: unset;
+  }
+
+  .rmBtn {
+    min-width: 120px;
+  }
+}

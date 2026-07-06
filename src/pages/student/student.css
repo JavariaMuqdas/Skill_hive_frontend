@@ -1,0 +1,1954 @@
+/* ====== RESTORE: Student Panel Navbar / Topbar (paste at TOP of student.css) ====== */
+:root {
+  --bg: #f6f7fb;
+  --text: #1a1d2a;
+  --muted: #7b7f91;
+
+  --top: #ffffff;
+  --card: #ffffff;
+  --line: #ececf4;
+
+  --sidebar: #ffffff;
+  --shadow: 0 10px 30px rgba(33, 37, 66, 0.08);
+
+  --primary: #6f63ff;
+  /* purple */
+  --primary2: #8b82ff;
+  --soft: #efeefe;
+
+  --pink: #ff6aa2;
+  --yellow: #ffc24b;
+  --blue: #4f8cff;
+  --purple: #6f63ff;
+
+  --radius: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+}
+
+.thShell {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+/* TOPBAR */
+.thTopbar {
+  position: fixed;
+  top: 0;
+  left: 270px;
+  right: 0;
+  height: 74px;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  z-index: 100;
+}
+
+
+
+.thTopbarInner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 28px;
+}
+
+.thBrand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.thBrandMark {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: var(--soft);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.thBrandText {
+  font-weight: 700;
+  letter-spacing: .2px;
+  font-size: 19px;
+}
+
+.thTopRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.thIconBtn {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.thIconBtn svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+  color: #111827;
+  fill: currentColor;
+}
+
+.notifBadge {
+  position: absolute;
+  top: 4px;
+  right: 3px;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ef4444;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.thUserMenu {
+  position: relative;
+}
+
+.thUserBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  border-radius: 14px;
+
+  background: #fff;
+  cursor: pointer;
+}
+
+.sjJobCard:hover {
+  border: 1px solid #003F51 !important;
+}
+
+.sjTitleRow h3:hover {
+  color: #003F51 !important;
+}
+.thNavIcon svg{
+  font-size: 20px;
+}
+.thAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  background: #F6F7F9;
+  color: #003F51;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.thUserMeta {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+  text-align: left;
+}
+
+.thUserName {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.thUserRole {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.thCaret {
+  color: var(--muted);
+  margin-left: 2px;
+}
+
+.thDropdown {
+  position: absolute;
+  right: 0;
+  top: 48px;
+  width: 180px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 8px;
+  z-index: 50;
+}
+
+.thDropItem {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 10px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: left;
+  font-weight: 600;
+}
+
+.thDropItem:hover {
+  background: var(--soft);
+}
+
+.thDropItem.danger {
+  color: #e11d48;
+}
+
+/* BODY */
+.thBody {
+  margin-left: 270px;
+  min-height: 100vh;
+}
+
+
+/* SIDEBAR */
+.thSidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  gap: 25px!important;
+  width: 270px;
+  height: 100vh;
+  background: #fff;
+  border-right: 1px solid #e5e7eb;
+  padding: 28px 16px;
+  z-index: 200;
+}
+
+.thSidebarSectionTitle {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 700;
+  padding: 0 10px;
+}
+
+.thNav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 0;
+}
+
+.thNavLink {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid transparent;
+  /* font-weight: 600; */
+  font-size: 17px;
+}
+.thNavLinkD {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid transparent;
+  /* font-weight: 600; */
+  font-size: 17px;
+}
+.thNavIcon {
+  width: 22px;
+  text-align: center;
+}
+.thNavIconD{
+  margin-top: 10px!important;
+}
+.thNavLink:hover {
+  background: #e5ebed;
+  color: #000;
+}
+
+.thNavLink.active {
+  background: #003F51;
+  color: #fff;
+}
+
+.thNavLink.active .thNavIcon {
+  filter: brightness(1.2);
+}
+
+/* sidebar footer */
+.thSidebarFooter {
+  margin-top: auto;
+}
+
+.thUpgradeCard {
+  background: linear-gradient(180deg, var(--soft), #fff);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 14px;
+}
+
+.thUpgradeTitle {
+  font-weight: 500;
+}
+
+.thUpgradeSub {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.thUpgradeBtn {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 14px;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* CONTENT */
+.thContent {
+  padding-top: 74px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+.thSideLogo {
+  height: 80px!important;
+  display: flex!important;
+  align-items: center!important;
+  cursor: pointer!important;
+  padding: 0!important;
+  margin-bottom: -20px!important;
+  overflow: hidden!important;
+}
+.thSideLogo img {
+  width: auto;
+  object-fit: contain;
+  display: block;
+  height: 150px;
+  transform: translateX(-25px);
+  margin-bottom: 30px;
+}
+.cPage {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 28px 18px 60px;
+}
+
+.cFileHidden {
+  display: none;
+}
+
+.cFileCustom {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.cFileButton {
+  background: var(--green);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.cFileText {
+  font-size: 13px;
+  color: #334155;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cHead {
+  margin-bottom: 18px;
+}
+
+.cTitle {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.cSub {
+  margin-top: 6px;
+  color: #475569;
+}
+
+.cInlineInfo {
+  margin: 10px 0;
+  color: #334155;
+}
+
+.cNotice {
+  margin: 12px 0;
+}
+
+.cSectionCard {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px;
+  margin-top: 14px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
+}
+
+.cSectionHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.cSectionHead h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.cGreenDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--green2);
+}
+
+.cLabel {
+  display: block;
+  margin: 14px 0 6px;
+  font-weight: 600;
+  color: #334155;
+  font-size: 13px;
+}
+
+.cInput {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 11px 12px;
+  outline: none;
+  background: #fff;
+}
+
+.cInput:focus {
+  border-color: var(--green2);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.18);
+}
+
+.cTextarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.cTextareaLg {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.cHint {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.cLogoRow {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-bottom: 6px;
+}
+
+.cLogoPreview {
+  width: 92px;
+  height: 92px;
+  border-radius: 14px;
+  border: 1px dashed var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #f1f5f9;
+}
+
+.cLogoPreview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cLogoPlaceholder {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.cBtnPrimary {
+  width: 100%;
+  border: none;
+  background: var(--green);
+  color: #fff;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cBtnPrimary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.cBtnSecondary {
+  width: 100%;
+  margin-top: 12px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--green);
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cDivider {
+  height: 1px;
+  background: var(--border);
+  margin: 16px 0;
+}
+
+.cJobsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cJobItem {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  background: #fff;
+}
+
+.cJobTitle {
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.cJobMeta {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.cJobBadgeActive,
+.cJobBadgeOff {
+  margin-top: 8px;
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.cJobBadgeActive {
+  background: rgba(16, 185, 129, 0.14);
+  color: var(--green);
+}
+
+.cJobBadgeOff {
+  background: rgba(148, 163, 184, 0.22);
+  color: #334155;
+}
+
+.cJobActions {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.cMiniBtn {
+  border: 1px solid var(--border);
+  background: #fff;
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.cMiniBtn.danger {
+  color: #b91c1c;
+}
+
+.sShell {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Topbar */
+.sTopbar {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+
+.sTopbarInner {
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22px;
+  gap: 16px;
+}
+
+.sBrand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 220px;
+}
+
+.sBrandIcon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(79, 70, 229, .15);
+  border: 1px solid rgba(79, 70, 229, .35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand);
+  font-weight: 500;
+}
+
+.sBrandTitle {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Nav */
+.sNav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex: 1;
+  justify-content: center;
+}
+
+.sNav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 8px 10px;
+  border-radius: 12px;
+}
+
+.sNav a.active {
+  background: #f3f4f6;
+}
+
+/* Right side user + logout */
+.sRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 220px;
+  justify-content: flex-end;
+}
+
+.sUserChip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.sAvatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: #eef2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: #3730a3;
+}
+
+.sUserTxt {
+  line-height: 1.1;
+}
+
+.sUserName {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.sUserRole {
+  font-size: 12px;
+  color: var(--muted);
+  text-transform: lowercase;
+}
+
+.sLogout {
+  padding: 10px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.sLogout:hover {
+  background: #f9fafb;
+}
+
+/* ===== Reference Dashboard (SCOPED) ===== */
+.jobDash {
+  background-color: #F6F7F9;
+  color: #333;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* keep default box sizing but scoped */
+.jobDash * {
+  box-sizing: border-box !important;
+}
+
+.jobDash .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 24px;
+}
+
+/* Main Content Area */
+.jobDash .main-content {
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.jobDash .card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  padding: 20px 24px;
+  border: 1px solid #eef2f5;
+  width: auto;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+/* ✅ UPDATED: header relative so actions can sit neatly under + */
+.jobDash .card-header {
+  position: relative;
+  /* ✅ added */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.jobDash .card-header h2 {
+  font-size: 18px;
+  color: #444;
+  font-weight: 600;
+}
+
+/* Buttons & Icons */
+.jobDash .icon-btn {
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  color: #003F51;
+  font-size: 18px;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.jobDash .icon-btn:hover {
+  background-color: #F6F7F9;
+}
+
+/* Profile Section */
+.jobDash .profile-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.jobDash .profile-pic-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.jobDash .progress-ring::after {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 0;
+}
+
+.jobDash .percentage-label {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 2px 6px;
+  font-size: 10px;
+  font-weight: 500;
+  color: #64748b;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  z-index: 2;
+  /* above ring */
+}
+
+.jobDash .profile-pic {
+  position: absolute;
+  inset: 8px;
+  /* same as ring thickness */
+  border-radius: 50%;
+  background: #ffffff;
+  /* white circle like your example */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.profile-pic svg {
+  font-size: 50px;
+}
+
+.jobDash .avatar-placeholder {
+  width: 60px;
+  height: 60px;
+  background: #94a3b8;
+  border-radius: 50%;
+}
+
+/* silhouette icon */
+.jobDash .avatarIcon {
+  font-size: 54px;
+  /* adjust size */
+  opacity: 0.9;
+}
+
+.jobDash .profile-info h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.jobDash .profile-info p {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.jobDash .lock-icon {
+  font-size: 12px;
+  color: #cbd5e1;
+  margin-left: 4px;
+}
+
+/* ✅ extra personal info pills */
+.jobDash .pi-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.jobDash .pi-pill {
+  font-size: 12px;
+  color: #fff;
+  background: #003F51;
+  border: 1px solid #003F51;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+/* Links row under personal info */
+.jobDash .linksRow {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.jobDash .linkChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid #003F51;
+  background: #F6F7F9;
+  color: #0f172a;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.jobDash .linkChip:hover {
+  background: #eef2ff;
+  border-color: #c7d2fe;
+}
+
+/* Content Text */
+.jobDash .placeholder-text {
+  font-size: 14px;
+  color: #94a3b8;
+  font-style: italic;
+  text-align: left;
+}
+
+.jobDash .content-text {
+  font-size: 14px;
+  color: #475569;
+}
+
+/* Layout wrapper */
+.layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ================= TOPBAR ================= */
+.topbar {
+  height: 60px;
+  background: #111827;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.logoIcon {
+  font-size: 20px;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.userChip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  background: #2563eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.logoutBtn {
+  background: #ef4444;
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* ================= BODY ================= */
+.body {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  gap: 10px;
+}
+
+.sidebar a {
+  color: #d1d5db;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background: #2563eb;
+  color: white;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: #f9fafb;
+}
+
+/* =========================================================
+   ✅ UPDATED HOVER ACTIONS (edit/delete only on section hover)
+   ========================================================= */
+
+/* Common actions container (can be used for Summary etc.) */
+/* ===== Education header hover actions (only for Education card) ===== */
+
+.jobDash .eduCard .eduHeaderActions {
+  display: flex;
+  flex-direction: column;
+  /* ✅ icons stack vertically */
+  align-items: flex-end;
+  gap: 6px;
+}
+
+/* Edit/Delete container hidden by default */
+/* ===== Education FIXES ===== */
+
+.jobDash .eduCard .eduHeader {
+  margin-bottom: 8px;
+  /* ✅ reduce gap under heading */
+}
+
+.jobDash .eduCard .eduTitle {
+  margin: 0;
+  /* ✅ remove default h2 spacing */
+}
+
+.jobDash .eduCard .eduBody {
+  margin-top: 0;
+  /* ✅ remove extra space before first item */
+  padding-top: 0;
+}
+
+.jobDash .eduCard .education-item {
+  padding-top: 4px;
+  /* ✅ small, clean spacing */
+}
+
+/* Right-side header icons layout */
+.jobDash .eduCard .eduHeaderActions {
+  display: flex;
+  flex-direction: column;
+  /* + on top, actions under it */
+  align-items: flex-end;
+  gap: 8px;
+}
+
+/* ✅ Edit + Delete should be SIDE BY SIDE */
+/* Divider under header */
+.jobDash .card hr {
+  margin: 12px 0 16px 0;
+}
+
+/* Education rows (same as experience rows) */
+.jobDash .itemRow {
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: flex-start; */
+  gap: 14px;
+  padding: 14px 0;
+}
+
+/* Right side icons */
+.jobDash .itemActions {
+  display: flex;
+  gap: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s ease;
+}
+
+/* Show edit/delete on hover */
+.jobDash .itemRow:hover .itemActions {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Remove extra spacing */
+.jobDash .itemTitle {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.jobDash .itemSub {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 3px;
+}
+
+.jobDash .year {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+.jobDash .sectionActions,
+.jobDash .itemActions {
+  display: flex;
+  gap: 6px;
+  align-items: flex-start;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-6px);
+  transition: opacity .2s ease, transform .2s ease, visibility .2s ease;
+}
+
+/* For single-block sections like Summary:
+   Add wrapper class "sectionBody" around section content
+   and actions group class "sectionActions" inside it. */
+.jobDash .sectionBody {
+  position: relative;
+}
+
+.jobDash .sectionBody:hover .sectionActions {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Education (only that education item hover) */
+.jobDash .education-item:hover .eduActions {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Experience / Projects / Certificates rows (only that row hover) */
+.jobDash .itemRow:hover .itemActions {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Education Typography */
+.jobDash .education-item h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.jobDash .education-item p {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.jobDash .year {
+  display: block;
+  font-size: 12px;
+  color: #94a3b8;
+  margin-top: 8px;
+}
+
+.jobDash hr {
+  border: none;
+  border-top: 1px solid #f1f5f9;
+  margin: 16px 0;
+}
+
+.thToast {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  min-width: 320px;
+  max-width: 460px;
+  padding: 18px 20px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.18);
+  z-index: 99999;
+  animation: toastSlideIn 0.28s ease;
+}
+
+.thToast-success {
+  background: #198754;
+  color: #ffffff;
+}
+
+.thToast-error {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: #ffffff;
+}
+
+.thToastMessage {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.thToastClose {
+  border: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: 18px;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+  transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.thToastClose:hover {
+  background: rgba(255, 255, 255, 0.12);
+  opacity: 1;
+}
+
+@keyframes toastSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-12px) translateX(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+
+/* Item rows for experience/projects/certs */
+.jobDash .itemRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 0;
+  border-top: 1px solid #f1f5f9;
+}
+
+.jobDash .itemRow:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.jobDash .itemMain {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+}
+
+.jobDash .itemTitle {
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.jobDash .itemSub {
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* Bullet list */
+.jobDash .bullets {
+  margin: 10px 0 0;
+  padding-left: 16px;
+  color: #475569;
+  font-size: 13px;
+}
+
+/* Pills for skills/languages/hobbies */
+.jobDash .pillWrap {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.jobDash .pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid #003F51;
+  background: #F6F7F9;
+  font-size: 13px;
+  color: #000;
+}
+
+.jobDash .pillX {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: #003F51;
+  display: inline-flex;
+  align-items: center;
+}
+
+.card-header svg {
+  color: #003F51;
+}
+
+.jobDash .pillX:hover {
+  color: #086687;
+}
+
+/* Plain link inside cards */
+.jobDash .plainLink {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.jobDash .plainLink:hover {
+  text-decoration: underline;
+}
+
+/* Sidebar */
+.jobDash .sidebar {
+  width: 300px;
+}
+
+.jobDash .sidebar-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.jobDash .download-btn {
+  width: 100%;
+  background: #003F51;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
+
+.jobDash .completion-card {
+  padding: 24px;
+}
+
+.jobDash .completion-card h3 {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.jobDash .progress-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background-color: #003F51;
+  z-index: 1;
+}
+
+.jobDash .progress-section {
+  margin-bottom: 20px;
+}
+
+.jobDash .progress-text {
+  font-size: 11px;
+  font-weight: 500;
+  color: #64748b;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.jobDash .progress-bar {
+  height: 6px;
+  background: #f1f5f9;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.jobDash .progress-fill {
+  height: 100%;
+  background: #003F51;
+}
+
+.jobDash .checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.jobDash .checklist li {
+  font-size: 13px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.jobDash .checklist .complete {
+  color: #334155;
+}
+
+.jobDash .checklist .complete i {
+  color: #10b981;
+}
+
+.jobDash .checklist .incomplete {
+  color: #94a3b8;
+}
+
+.jobDash .checklist .incomplete i {
+  color: #f87171;
+}
+
+/* Mini form inside sidebar */
+.jobDash .formMini {
+  display: grid;
+  gap: 6px;
+}
+
+.jobDash .miniLabel {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.jobDash .miniSelect {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #003F51;
+  outline: none;
+}
+
+.jobDash .miniSelect:hover {
+  background-color: #F6F7F9;
+}
+
+.jobDash .miniBtn {
+  width: 100%;
+  border: 0;
+  padding: 12px;
+  border-radius: 10px;
+  background: #003F51 !important;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+  ;
+}
+
+.jobDash .miniBtn:hover {
+  background-color: #086687 !important;
+}
+
+.jobDash .download-btn:hover {
+  background-color: #086687;
+
+}
+
+/* Wrapper */
+.companiesWrapper {
+  padding: 20px 30px;
+  background: #F6F7F9;
+  min-height: 100vh;
+}
+
+/* Search Bar */
+.companySearchBar {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.companySearchBar input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #CCCCCC;
+  border-radius: 10px;
+  font-size: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.companySearchBar input:hover {
+  border: 1px solid #003F51 !important;
+  /* box-shadow: 2px 2px 5px red; */
+}
+
+.companySearchBar button {
+  background: #003F51;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.companySearchBar button:hover {
+  background-color: #086687;
+}
+
+.companySearchBar button:focus {
+  display: none;
+}
+
+/* Heading */
+.companyHeading {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* Grid */
+.companyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+/* Card */
+.companyCardNew {
+  display: block;
+  cursor: pointer;
+  background: #ffffff;
+  padding: 25px;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.companyCardNew:hover {
+  /* background: #dee2e6; */
+  transform: translateY(-2px);
+  transition: 0.2s;
+}
+
+/* Logo */
+.companyLogoBox img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.companyLogoPlaceholder {
+  width: 120px;
+  height: 120px;
+  background: #F6F7F9;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+/* Name */
+.companyNameNew {
+  color: #003F51;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.companyNameNew:hover {
+  color: #086687;
+}
+
+/* Tagline */
+.companyTagline {
+  color: #555;
+  margin: 10px 0;
+}
+
+/* Meta */
+.companyMeta {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  color: #444;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.companyType {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Loading */
+.loading {
+  padding: 30px;
+}
+
+/* Error */
+.errorMsg {
+  color: red;
+}
+
+.companyDetailWrapper {
+  padding: 20px;
+  background-color: #F6F7F9;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: 16px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.companyDetailHeader {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #086687;
+}
+
+.companyDetailLogoBox {
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.companyDetailLogoBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 2px solid #F6F7F9;
+  border-radius: 12px;
+}
+
+
+.companyDetailLogoPlaceholder {
+  width: 100%;
+  height: 100%;
+  font-size: 34px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.companyDetailName {
+  margin: 0;
+  font-size: 28px;
+  color: #000;
+}
+
+.companyDetailSub {
+  margin: 6px 0 0;
+  opacity: 0.8;
+  color: #003F51;
+}
+
+.companyDetailGrid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.detailCard {
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #086687;
+}
+
+.detailCard h4 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #003F51;
+}
+
+.detailCard p,
+.detailCard a {
+  margin: 0;
+  font-size: 15px;
+  word-break: break-word;
+}
+
+.companyDetailAbout {
+  margin-top: 18px;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #086687;
+}
+
+.sjWrap {
+  background-color: #F6F7F9 !important;
+}
+
+.sjSelect {
+  border: 1px solid #086687;
+}
+
+.sjSearchField:hover {
+  border: 1px solid #086687;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.6);
+}
+
+.companyDetailAbout h3 {
+  font-size: 16px;
+  color: #003F51;
+  font-weight: 900 !important;
+}
+
+.companyDetailAbout p {
+  font-size: 15px;
+}
+
+.viewJobsBtn {
+  display: block;
+  /* Yeh line zaroori hai margin auto kaam karne ke liye */
+  margin: 16px auto 0 auto;
+  /* Top par 16px space, left/right se auto (center) */
+  width: 17%;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 12px;
+  background: #003F51;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
+
+.viewJobsBtn:hover {
+
+  background-color: #086687;
+}
+
+/* responsive */
+@media (max-width: 500px) {
+  .companyDetailGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .companyDetailHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .companyDetailGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .jobDash .container {
+    flex-direction: column;
+  }
+
+  .jobDash .sidebar {
+    width: 100%;
+  }
+}
+
+/* ===== Keep your CV modal/preview styles (unchanged) ===== */
+.cvModalBackdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 9999;
+}
+
+.cvModal {
+  width: 760px;
+  max-width: 95vw;
+  max-height: 90vh;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, .08);
+  overflow: hidden;
+}
+
+.cvModalBody {
+  padding: 14px;
+  max-height: calc(90vh - 60px);
+  overflow: auto;
+}
+
+.cvModalHead {
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, .06);
+}
+
+.cvIconBtn {
+  border: 1px solid rgba(0, 0, 0, .14);
+  background: #fff;
+  border-radius: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.cvLabel {
+  display: block;
+  font-size: 13px;
+  opacity: .8;
+  margin: 10px 0 6px;
+}
+
+.cvInput,
+.cvSelect,
+.cvTextarea {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, .14);
+  border-radius: 12px;
+  padding: 10px 12px;
+  outline: none;
+  background: #fff;
+}
+
+.cvTextarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.cvPrimaryBtn {
+  border: 0;
+  border-radius: 12px;
+  padding: 10px 12px;
+  cursor: pointer;
+  color: #fff;
+  background: #003F51;
+}
+
+.cvPrimaryBtn:hover {
+  background-color: #086687;
+}
+
+.cvBtn {
+  border: 1px solid rgba(0, 0, 0, .14);
+  border-radius: 12px;
+  padding: 10px 12px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.cvBtn:hover {
+  background-color: #F6F7F9;
+}
+
+.cvModalActions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  justify-content: flex-end;
+}
+
+/* Preview wrapper */
+.cvPreviewViewport {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  padding: 0;
+  margin: 0;
+  /* min-height: 0 !important;
+    height: auto !important; */
+}
+
+.cvPreviewScale {
+  transform-origin: top left;
+  display: inline-block;
+}

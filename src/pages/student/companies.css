@@ -1,0 +1,235 @@
+.companiesPage {
+  min-height: 100vh;
+  background: #f6f2fb;
+  padding: 32px;
+  color: #071739;
+}
+
+.companiesHero {
+  background: #eef0ff;
+  border-radius: 22px;
+  padding: 55px 35px;
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.companiesHero h1 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.companiesHero h1 span {
+  color: #5b6cff;
+}
+
+.companiesHero p {
+  color: #6f7895;
+  font-size: 17px;
+  margin-bottom: 28px;
+}
+
+.searchWrapper {
+  max-width: 850px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 140px;
+  gap: 10px;
+  box-shadow: 0 18px 40px rgba(31, 42, 90, 0.08);
+}
+
+.searchInput {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f8f9ff;
+  border-radius: 12px;
+  padding: 0 16px;
+  color: #5b6cff;
+}
+
+.searchInput input,
+.companySearchBar input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 15px 0;
+  font-size: 15px;
+}
+
+.searchWrapper button,
+.companySearchBar button {
+  border: none;
+  background: linear-gradient(135deg, #6b8dfd, #4479ee);
+  color: white;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.popularTags {
+  margin-top: 18px;
+  color: #7d849c;
+  font-size: 14px;
+}
+
+.companiesWrapper {
+  background: red!important;
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: 0 14px 35px rgba(31, 42, 90, 0.07);
+}
+
+.companySearchBar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 120px;
+  gap: 12px;
+  margin-bottom: 26px;
+}
+
+.companySearchBar input {
+  background: #f7f8ff;
+  border-radius: 12px;
+  padding: 15px 16px;
+}
+
+.companyHeading {
+  font-size: 26px;
+  margin-bottom: 22px;
+}
+
+.errorMsg {
+  color: #e53935;
+  margin-bottom: 16px;
+}
+
+.noData {
+  color: #77809c;
+  font-size: 16px;
+}
+
+.companyGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.companyCardNew {
+  background: #ffffff;
+  border: 1px solid #edf0fa;
+  border-radius: 20px;
+  padding: 24px;
+  min-height: 230px;
+  box-shadow: 0 12px 30px rgba(31, 42, 90, 0.07);
+  transition: 0.25s ease;
+}
+
+.companyCardNew:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(31, 42, 90, 0.12);
+}
+
+.companyLogoBox {
+  width: 66px;
+  height: 66px;
+  border-radius: 18px;
+  background: #eef0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+
+.companyLogoBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.companyLogoPlaceholder {
+  font-size: 28px;
+  font-weight: 800;
+  color: #5b6cff;
+}
+
+.companyNameNew {
+  font-size: 19px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: #003F51!important ;
+}
+
+.companyMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #69718d;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.companyMeta i,
+.companyType i {
+  color: #5b6cff;
+  margin-right: 7px;
+}
+
+.companyType {
+  color: #69718d;
+  font-size: 14px;
+}
+
+.loading {
+  padding: 40px;
+  color: #071739;
+  font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  .companyGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .companyGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .searchWrapper,
+  .companySearchBar {
+    grid-template-columns: 1fr;
+  }
+
+  .searchWrapper button,
+  .companySearchBar button {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .companiesPage {
+    padding: 18px;
+  }
+
+  .companiesHero {
+    padding: 38px 20px;
+  }
+
+  .companiesHero h1 {
+    font-size: 30px;
+  }
+
+  .companiesWrapper {
+    padding: 20px;
+  }
+
+  .companyGrid {
+    grid-template-columns: 1fr;
+  }
+}

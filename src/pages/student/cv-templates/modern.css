@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+  --left: #1b2a35;
+  --leftText: #dbe4ea;
+  --leftMuted: #aab7c1;
+  --line: #2a3a46;
+  --topBar: #5f88a1;
+  --paper: #ffffff;
+  --text: #2b2f33;
+  --muted: #6b7680;
+  --accent: #4f7f96;
+  --shadow: 0 14px 40px rgba(0, 0, 0, 0.22);
+  --radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.cvPage {
+  margin: 0;
+  padding: 0; /* FIX */
+  font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  display: block; /* FIX */
+  width: 100%;
+  background: #fff;
+}
+
+.resume {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto; /* FIX */
+  background: var(--paper);
+  border-radius: 0; /* FIX for export */
+  overflow: hidden;
+  box-shadow: none; /* FIX */
+  display: grid;
+  grid-template-columns: 320px 1fr;
+}
+
+.resume,
+.resume * {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.resume .left {
+  background: var(--left);
+  color: var(--leftText);
+  padding: 22px 22px 26px;
+  position: relative;
+}
+
+.classicleft {
+  padding: 30px;
+}
+
+.resume .nameBlock {
+  margin-top: 6px;
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.resume .nameBlock h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 0.6px;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+}
+
+.resume .nameBlock h2 {
+  margin: 6px 0 0;
+  font-size: 13px;
+  letter-spacing: 1.6px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: left;
+}
+
+.resume .contactRow {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr);
+  column-gap: 10px;
+  align-items: center;
+  justify-items: start;
+  text-align: left;
+  padding: 12px 0;
+  color: var(--leftText);
+  font-size: 13px;
+}
+
+.resume .ico {
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+  flex-shrink: 0;
+}
+
+.resume .contactRow span {
+  color: #6a7680;
+  text-align: left;
+  justify-self: start;
+  width: 100%;
+  word-break: break-word;
+}
+
+.resume .contactRow a {
+  color: inherit;
+  text-decoration: none;
+  text-align: left;
+  justify-self: start;
+  word-break: break-word;
+}
+
+.resume .contactRow a:hover {
+  text-decoration: underline;
+}
+
+.resume .leftSection {
+  padding-top: 16px;
+  margin-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.resume .leftSection:first-of-type {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.resume .leftTitle {
+  margin: 0 0 10px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+}
+
+.resume .bulletList {
+  margin: 0;
+  padding-left: 18px;
+  color: #6a7680;
+  font-size: 13px;
+  line-height: 1.55;
+  text-align: left;
+}
+
+.resume .bulletList li {
+  margin: 7px 0;
+}
+
+.resume .smallPara {
+  margin: 0 0 8px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #6a7680;
+  text-align: left;
+}
+
+.resume .smallPara .muted {
+  color: var(--leftMuted);
+}
+
+.resume .interestLine {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.resume .right {
+  background: var(--paper);
+  position: relative;
+  padding: 0;
+  min-width: 0;
+}
+
+.resume .top {
+  background: var(--topBar);
+  height: 92px;
+  position: relative;
+}
+
+.resume .profileBox {
+  position: absolute;
+  right: 26px;
+  top: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume .photoWrap {
+  width: 116px;
+  height: 116px;
+  border-radius: 999px;
+  border: 6px solid var(--paper);
+  overflow: hidden;
+  box-shadow: none; /* FIX */
+  background: #dfe7ee;
+  cursor: pointer;
+  padding: 0;
+  appearance: none;
+}
+
+.resume .photoWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.resume .profileText {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6a7680;
+  letter-spacing: 0.5px;
+}
+
+.resume .content {
+  padding: 22px 26px 26px;
+  margin: 0; /* FIX */
+}
+
+.resume .section {
+  margin-top: 24px;
+}
+
+.resume .section:first-child {
+  margin-top: 0;
+}
+
+.resume .sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.resume .sectionHeader h3 {
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #30363b;
+  white-space: nowrap;
+}
+
+.resume .hr {
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    #3c6f86 0%,
+    rgba(60, 111, 134, 0.18) 70%,
+    rgba(60, 111, 134, 0) 100%
+  );
+  flex: 1;
+  border-radius: 999px;
+  opacity: 0.9;
+}
+
+.resume .objective {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.65;
+  max-width: 620px;
+  text-align: left;
+}
+
+.resume .item {
+  padding: 10px 0;
+  border-bottom: 1px solid #eef1f4;
+}
+
+.resume .item:last-child {
+  border-bottom: none;
+}
+
+.resume .row1 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.resume .title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  color: #2f353a;
+}
+
+.resume .date {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6a7680;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.resume .meta {
+  margin: 6px 0 0;
+  font-size: 12.5px;
+  color: #6a7680;
+  font-weight: 500;
+}
+
+.resume .desc {
+  margin: 8px 0 0;
+  color: #6b7680;
+  font-size: 13px;
+  line-height: 1.6;
+  padding-left: 18px;
+}
+
+.resume .desc li {
+  margin: 6px 0;
+}
+
+.resume > :last-child,
+.resume .content > :last-child,
+.resume .left > :last-child,
+.resume .right > :last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+@media (max-width: 860px) {
+  .cvPage {
+    padding: 14px;
+  }
+
+  .resume {
+    grid-template-columns: 1fr;
+  }
+
+  .resume .top {
+    height: 84px;
+  }
+
+  .resume .photoWrap {
+    width: 104px;
+    height: 104px;
+  }
+
+  .resume .left {
+    padding: 18px;
+  }
+
+  .resume .content {
+    padding: 18px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .resume .photoWrap {
+    width: 92px;
+    height: 92px;
+    border-width: 5px;
+  }
+
+  .resume .nameBlock h1 {
+    font-size: 24px;
+  }
+
+  .resume .row1 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .resume .contactRow {
+    grid-template-columns: 20px minmax(0, 1fr);
+    font-size: 12px;
+  }
+}

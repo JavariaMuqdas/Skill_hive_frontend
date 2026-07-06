@@ -1,0 +1,295 @@
+.container {
+  background-color: #f6f7f9;
+  padding: 30px;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+}
+
+.companiesHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.companiesHeader h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.exportBtn {
+  height: 42px;
+  padding: 0 20px;
+  border-radius: 10px;
+  border: 1px solid #00495d;
+  background: #ffffff;
+  color: #00495d;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tableCard {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e6ecef;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
+
+.toolbar {
+  padding: 18px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchBox {
+  width: 270px;
+  height: 46px;
+  border: 1px solid #e4e8eb;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  background: #ffffff;
+}
+
+.searchBox i {
+  color: #7a8790;
+}
+
+.searchBox input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  color: #2f3a42;
+}
+
+.filterBtn {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  border: 1px solid #e4e8eb;
+  background: #ffffff;
+  color: #52616b;
+  cursor: pointer;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.customTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.customTable thead {
+  background: #f6fafb;
+}
+
+.customTable th {
+  padding: 15px 22px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #1f2933;
+}
+.customTable th:last-child {
+  text-align: center;
+}
+
+.customTable td:last-child {
+  text-align: center;
+}
+.customTable td {
+  padding: 16px 22px;
+  font-size: 16px;
+  color: #1f2933;
+  border-bottom: 1px solid #edf1f3;
+}
+
+.userInfoCell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  background-color: #e0f2f7;
+  color: #00495d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.userNameText {
+  font-weight: 500;
+}
+
+.badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.badgeStudent {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.badgeCompany {
+  background-color: #f3e8ff;
+  color: #6b21a8;
+}
+
+.statusBadge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.statusActive {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.statusInactive {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.actionCell {
+  position: relative;
+  text-align: center;
+}
+
+.actionMenuBtn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #0b5563;
+}
+
+.actionMenuPopover {
+  position: absolute;
+  right: 22px;
+  top: 42px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.12);
+  z-index: 50;
+  width: 180px;
+  padding: 6px 0;
+  text-align: left;
+}
+
+.popoverItem {
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #334155;
+  cursor: pointer;
+}
+
+.popoverItem:hover {
+  background-color: #f1f5f9;
+}
+
+.textDanger {
+  color: #ef4444;
+}
+
+.loadingState,
+.emptyState {
+  padding: 40px;
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+  background: #ffffff;
+}
+
+.tableFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 18px 22px;
+}
+
+.tableFooter span {
+  font-size: 13px;
+  color: #334155;
+}
+
+.paginationControls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.paginationControls button {
+  min-width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  border: 1px solid #e4e8eb;
+  background: #ffffff;
+  cursor: pointer;
+  color: #394650;
+}
+
+.paginationControls button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.activePageBtn {
+  background: #00495d !important;
+  color: #ffffff !important;
+  border-color: #00495d !important;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  .companiesHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+
+  .searchBox {
+    width: 100%;
+  }
+
+  .tableFooter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+}

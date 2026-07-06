@@ -1,0 +1,469 @@
+.pjdContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #1e293b;
+}
+
+.pjdLoading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  font-size: 18px;
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+/* کلین اور ماڈرن ٹاپ ہیڈر کارڈ */
+.pjdHeaderCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.pjdHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pjdCompanyAvatar {
+  width: 64px;
+  height: 64px;
+  background-color: #003F51;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.pjdHeaderDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.pjdTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pjdTitleRow h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.pjdVerifiedBadge {
+  background: #22c55e;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.pjdHeaderMeta {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #64748b;
+  flex-wrap: wrap;
+}
+
+.pjdHeaderMeta span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pjdHeaderBadges {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.pjdBadgeType,
+.pjdBadgeUrgent {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.pjdBadgeType {
+  background: #04AA6D;
+  color: #fff;
+}
+
+.pjdBadgeUrgent {
+  background: #ffedd5;
+  color: #c2410c;
+}
+
+.pjdHeaderRight {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.pjdDeadlineText {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.pjdBookmarkBtn {
+  background: #F6F7F9 ;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #003F51;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* مین گرڈ لے آؤٹ */
+.pjdMainGrid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 25px;
+}
+
+/* بائیں طرف کا جاب ڈسکرپشن کارڈ */
+.pjdContentCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.pjdContentSection {
+  margin-bottom: 35px;
+}
+
+.pjdContentSection h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 16px 0;
+}
+
+.pjdTextParagraph {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #475569;
+}
+
+.pjdBulletList {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.pjdBulletList li {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 10px;
+}
+
+/* امیج گرڈ اسٹائلنگ */
+.pjdPhotoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.pjdPhotoGrid img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.pjdPhotoMore {
+  position: relative;
+  cursor: pointer;
+}
+
+.pjdPhotoOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.6);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* ویڈیو پلیئر اسٹائلنگ */
+.pjdVideoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #000;
+}
+
+.pjdVideoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* دائیں طرف کے سائڈبار کارڈز */
+.pjdSidebarCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.pjdSidebarCard h3 {
+  margin: 0 0 18px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 10px;
+}
+
+/* جاب اوورویو لسٹ */
+.pjdOverviewList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pjdOverviewItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.pjdOverviewItem i {
+  color: #1e70e0;
+  font-size: 18px;
+  margin-top: 2px;
+  width: 20px;
+  text-align: center;
+}
+
+.pjdItemLabel {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 2px;
+}
+
+.pjdItemValue {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+/* سائڈبار کمپنی پروفائل */
+.pjdCompanySidebarHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.pjdCompanySidebarAvatar {
+  width: 44px;
+  height: 44px;
+  background-color: #003F51;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.pjdCompanySidebarHeader h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.pjdViewProfileBtn {
+  background: transparent;
+  border: none;
+  color: #1e70e0;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+.pjdCompanyDetailsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 13.5px;
+}
+
+.pjdCompanyDetailRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pjdCompanyDetailRow span {
+  color: #64748b;
+}
+
+.pjdCompanyDetailRow strong {
+  color: #334155;
+  font-weight: 500;
+}
+
+/* ٹیکسٹ ایریا اور بٹن */
+.pjdTextarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 13px;
+  outline: none;
+  resize: none;
+  box-sizing: border-box;
+  margin-bottom: 14px;
+  font-family: inherit;
+}
+
+.pjdApplyPrimaryBtn {
+  width: 100%;
+  background: #003F51;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+.pjdBookmarkBtn svg {
+  font-size: 18px!important;
+  color: #111827!important;
+  margin-top: 8px;
+}
+.pjdApplyPrimaryBtn:hover {
+  background: #086687;
+}
+
+.pjdStatusMessage {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #15803d;
+  font-weight: 600;
+}
+
+.alreadyAppliedBtn {
+  background-color: #6c757d !important;
+  /* Grey color */
+  cursor: not-allowed;
+}
+
+.jobClosedBtn {
+  background-color: #dc3545 !important;
+  /* Red color */
+  cursor: not-allowed;
+}
+
+/* apply now button css changes */
+/* Base styling for your active button (keep your original padding/radius) */
+.pjdApplyPrimaryBtn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* ✅ Style configuration for when the user has already applied */
+.pjdApplyPrimaryBtn.alreadyAppliedBtn {
+  background-color: #cbd5e1 !important;
+  /* Muted grey background */
+  color: #64748b !important;
+  /* Darker slate grey text */
+  border: 1px solid #94a3b8 !important;
+  /* Subtle border border */
+  cursor: not-allowed !important;
+  /* Shows disabled cursor on hover */
+  box-shadow: none !important;
+  /* Removes hover shadow glow effects */
+}
+
+/* Optional: Style configuration for when a job deadline expires */
+.pjdApplyPrimaryBtn.jobClosedBtn {
+  background-color: #fee2e2 !important;
+  color: #ef4444 !important;
+  border: 1px solid #fca5a5 !important;
+  cursor: not-allowed !important;
+}
+
+/* رسپونسیو ڈیزائن (Responsive layout) */
+@media (max-width: 950px) {
+  .pjdMainGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .pjdHeaderCard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .pjdHeaderRight {
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid #f1f5f9;
+    padding-top: 12px;
+  }
+}

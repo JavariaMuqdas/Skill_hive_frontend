@@ -1,0 +1,200 @@
+.signupPage .authPage {
+  min-height: 100vh;
+  background:#f6f7f9!important;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px 16px;
+}
+.signupPage{
+  background-color: #F6F7F9!important;
+}
+.signupPage svg{
+  font-size: 20px;
+  margin-bottom:-5px;
+}
+.authTopIcon svg{
+  font-size: 35px;
+}
+.signupPage .authCard {
+  width: 100%;
+  max-width: 760px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+}
+.signupPage .authTopIcon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #eef6fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+.signupPage .authTitle {
+  margin: 0;
+  color: #003f52;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.signupPage .authSub {
+  margin: 8px 0 28px;
+  color: #64748b;
+  font-size: 15px;
+}
+
+.signupPage .authForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 22px;
+}
+.signupPage .fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.signupPage .full {
+  grid-column: 1 / -1;
+}
+.signupPage .fileInput {
+  padding: 15px 14px;
+}
+.signupPage .textareaInput {
+  height: auto;
+  min-height: 95px;
+  padding: 14px;
+  resize: vertical;
+}
+.signupPage .authHeader {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 26px;
+}
+.signupPage .authLabel {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: -8px;
+}
+.signupPage .authRoleGrid {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid #dbe4ee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.signupPage .authRoleBtn {
+  height: 56px;
+  border: none;
+  background: white;
+  color: #0f172a;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.signupPage .authRoleBtn.active {
+  background: #004b5c;
+  color: white;
+}
+.signupPage .authInputWrap {
+  position: relative;
+}
+
+.signupPage .authLeftIcon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #64748b;
+  font-size: 15px;
+}
+
+.signupPage .authInput {
+  width: 100%;
+  height: 56px;
+  border: 1px solid #dbe4ee;
+  border-radius: 10px;
+  padding: 0 14px 0 44px;
+  font-size: 14px;
+  outline: none;
+  background: white;
+}
+
+.signupPage .authInput:focus {
+  border-color: #004b5c;
+  box-shadow: 0 0 0 3px rgba(0, 75, 92, 0.08);
+}
+.signupPage textarea.authInput {
+  height: auto;
+  padding-top: 14px;
+  resize: vertical;
+}
+.signupPage .authEye{
+  position:absolute;
+  right:10px;
+  background:transparent;
+  border:none;
+  cursor:pointer;
+  font-size:16px;
+  opacity:.65;
+}
+
+.signupPage .authBtn {
+  grid-column: 1 / -1;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background: #004b5c;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.authBtn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.signupPage .authBottom{
+  margin-top:12px;
+  text-align:center;
+  color:#64748b;
+  font-size:13px;
+}
+
+.signupPage .authLink{
+  color:#2563eb;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.signupPage .authError {
+  grid-column: 1 / -1;
+  color: #dc2626;
+  background: #fee2e2;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+@media (max-width: 700px) {
+  .authCard {
+    padding: 24px;
+  }
+
+  .authForm {
+    grid-template-columns: 1fr;
+  }
+
+  .authTitle {
+    font-size: 28px;
+  }
+} 

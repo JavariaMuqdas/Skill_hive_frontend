@@ -1,0 +1,235 @@
+html,
+body,
+#root {
+    background: #ffffff !important;
+}
+
+.jobListHero {
+    background: #F5F7FC;
+    padding: 55px 20px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.jobListHero h1 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.jobListHero p {
+    color: #4b5563;
+    font-size: 15px;
+}
+
+.jobListPage {
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    gap: 35px;
+    max-width: 1280px;
+    margin: 60px auto;
+    padding: 0 20px;
+    background: #ffffff;
+}
+
+.jobFilterBox {
+    background: #f3f6fb;
+    border-radius: 8px;
+    padding: 28px;
+    height: fit-content;
+}
+
+.filterGroup {
+    margin-bottom: 28px;
+}
+
+.filterGroup h3 {
+    font-size: 18px;
+    margin-bottom: 14px;
+    color: #111827;
+}
+
+.filterInput {
+    background: #ffffff;
+    height: 58px;
+    border-radius: 6px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.filterInput input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+}
+
+.filterGroup select {
+    width: 100%;
+    height: 58px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 0 16px;
+    font-size: 15px;
+    background: #ffffff;
+    color: #4b5563;
+}
+
+.jobListTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.jobListTop p {
+    font-size: 16px;
+    color: #111827;
+}
+
+.sortBtn {
+    border: none;
+    background: #eef3f8;
+    padding: 14px 25px;
+    border-radius: 6px;
+    color: #4b5563;
+    font-size: 15px;
+}
+
+.jobListCards {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.jobListCardd {
+    position: relative;
+    min-height: 150px;
+    border: 1px solid #e5e8ef;
+    border-radius: 8px;
+    background: #ffffff;
+    padding: 30px 58px 26px 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+
+.jobListCard:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+    border-color: #e5e7eb;
+}
+
+
+.jobListLogo {
+    width: 52px;
+    height: 52px;
+    border-radius: 6px;
+    background: #1967d2;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.jobListInfo h3 {
+    font-size: 19px;
+    color: #111827;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.jobListInfo h3 span {
+    font-size: 13px;
+    color: #16a34a;
+    font-weight: 400;
+    margin-left: 6px;
+}
+
+.jobListMeta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    color: #4b5563;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.jobListMeta span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.jobListTags {
+    display: flex;
+    gap: 12px;
+}
+
+.fullTag {
+    background: #e8f1ff;
+    color: #1967d2;
+    padding: 7px 22px;
+    border-radius: 18px;
+    font-size: 13px;
+    line-height: 1;
+}
+
+
+
+.jobListBookmark {
+    position: absolute;
+    right: 28px;
+    top: 28px;
+    border: none;
+    background: transparent;
+    color: #6b7280;
+    cursor: pointer;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 35px;
+}
+
+.pagination button {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background: #1967d2;
+    color: #ffffff;
+    border-color: #1967d2;
+}
+
+@media (max-width: 900px) {
+    .jobListPage {
+        grid-template-columns: 1fr;
+    }
+
+    .jobListCardd {
+        flex-direction: column;
+    }
+
+    .jobListTop {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+}

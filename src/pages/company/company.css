@@ -1,0 +1,7 @@
+.statusSelect {
+  background: #fff !important;
+}
+.statusSelect option {
+  background: #fff;
+  color: #111;
+}

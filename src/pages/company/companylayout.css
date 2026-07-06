@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.min.css"); */
+:root {
+
+  --panel: #ffffff;
+  --line: #e8eef7;
+
+  --text: #101828;
+  --muted: #667085;
+
+  --blue: #2563eb;
+  --blueSoft: #eaf1ff;
+
+  --shadow: 0 10px 24px rgba(16, 24, 40, 0.06);
+
+  --r12: 12px;
+  --r14: 14px;
+  --r16: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* layout */
+.jpShell {
+  min-height: 100vh;
+  display: flex;
+}
+
+/* ===== Sidebar ===== */
+.jpSide {
+  width: 270px;
+  background: #fff;
+  border-right: 1px solid #e5e7eb;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+i {
+  color: red;
+}
+
+.jpBrand {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: -20px;
+  overflow: hidden;
+}
+
+.jpBrand img {
+  
+  width: auto;
+  object-fit: contain;
+  display: block;
+  height: 150px;
+  transform: translateX(-25px);
+  margin-bottom: 10px;
+}
+
+
+.jpBrandText {
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+}
+
+/* nav */
+.jpNav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 0;
+}
+
+.jpLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 12px;
+  border-radius: 12px;
+  color: #344054;
+  font-weight: 600;
+}
+
+.jpIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #475467;
+  background: transparent;
+}
+
+.jpIcon svg {
+  font-size: 20px;
+
+}
+
+.jpLabel {
+  font-size: 17px;
+}
+
+.jpLink:hover {
+  background: #e5ebed !important;
+  color: #000 !important;
+}
+
+.jpLink.active {
+  background: #003F51 !important;
+  color: #fff !important;
+}
+
+.jpLink.active .jpIcon {
+  background: #003F51 !important;
+  color: #fff !important;
+}
+
+.jpSideFooter {
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.jpLogout {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: #475467;
+  padding: 10px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.jpLogout:hover {
+  background: #f6f8ff;
+}
+
+/* ===== Main / Topbar ===== */
+.jpMain {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.jpTop {
+  height: 74px;
+  background: var(--panel);
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22px;
+}
+
+.jpWelcomeTitle {
+  font-weight: 700;
+  font-size: px;
+}
+
+.jpWelcomeSub {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+/* right */
+.jpTopRight {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.jpTopIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #344054;
+}
+
+.jpTopIcon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.jpTopIcon:hover {
+  background: #f8fafc;
+}
+
+.jpUserWrap {
+  position: relative;
+}
+
+.jpUserBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  border-radius: 16px;
+  border: red !important;
+  background: #fff;
+  cursor: pointer;
+}
+
+.jpUserBtn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.jpUserBtn:hover {
+  background: #f8fafc;
+}
+
+.jpAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: #003F51;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.jpUserTxt {
+  line-height: 1.1;
+  text-align: left;
+}
+
+.jpUserName {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.jpUserRole {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.jpCaret {
+  color: var(--muted);
+}
+
+/* dropdown */
+.jpUserMenu {
+  position: absolute;
+  right: 0;
+  top: 56px;
+  width: 200px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 8px;
+  z-index: 9999;
+}
+
+.jpMenuItem {
+  width: 100%;
+  border: none;
+  background: transparent;
+  text-align: left;
+  padding: 10px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #344054;
+}
+
+.jpMenuItem:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.jpMenuItem:hover {
+  background: #f6f8ff;
+}
+
+.jpMenuItem.danger {
+  color: #e11d48;
+}
+.pending-btn:hover{
+  background-color:#086687!important;
+}
+.jpMenuItem.danger:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* content */
+.jpContent {
+  padding: 22px;
+  overflow: auto;
+  background-color: #F6F7F9!important;
+}

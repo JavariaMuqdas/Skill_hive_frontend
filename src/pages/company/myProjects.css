@@ -1,0 +1,25 @@
+.mpPage { padding: 18px; }
+.mpHead { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 12px; }
+.mpHead h2 { margin: 0; }
+.mpBtn {
+  padding: 10px 14px; border-radius: 12px;
+  background: #111827; color: #fff; text-decoration: none; font-weight: 700;
+}
+.mpAlert, .mpCard {
+  padding: 12px; border: 1px solid #e5e7eb; border-radius: 14px; background: #fff;
+}
+.mpList { display: flex; flex-direction: column; gap: 10px; }
+.mpItem {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px; border: 1px solid #e5e7eb; border-radius: 14px; background: #fff;
+}
+.mpTitle { font-weight: 900; }
+.mpMeta { color: #6b7280; font-size: 13px; margin-top: 4px; }
+.badge {
+  font-size: 12px; padding: 6px 10px; border-radius: 999px;
+  border: 1px solid #e5e7eb; background: #f9fafb;
+  text-transform: capitalize;
+}
+.badge.published { border-color: #bbf7d0; background: #f0fdf4; }
+.badge.draft { border-color: #e5e7eb; background: #fff; }
+.badge.closed { border-color: #fed7aa; background: #fff7ed; }

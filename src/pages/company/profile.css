@@ -1,0 +1,670 @@
+:root {
+  --cp-bg: #f6f1f8;
+  --cp-surface: #ffffff;
+  --cp-surface-soft: #fcf9fe;
+  --cp-border: #eadff1;
+  --cp-border-strong: #b58acb;
+  --cp-primary: #7b2cbf;
+  --cp-primary-dark: #6625a1;
+  --cp-primary-soft: #f1e7fa;
+  --cp-text: #2b2232;
+  --cp-muted: #73697d;
+  --cp-success-bg: #ccf0e7;
+  --cp-success-text: #2a6a58;
+  --cp-shadow: 0 14px 34px rgba(108, 63, 145, 0.08);
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.cpPage {
+  min-height: 100vh;
+  padding: 28px 20px 40px;
+  /* background: #F4EEF9; */
+  overflow: hidden;
+  position: relative;
+}
+
+.cpPage::before,
+.cpPage::after {
+  display: none;
+}
+
+.cpPage::before {
+  top: -60px;
+  left: -60px;
+}
+
+.cpPage::after {
+  bottom: -60px;
+  right: -60px;
+}
+
+.cpShell {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.cpHero,
+.cpSectionCard,
+.cpSectionContent,
+.cpUploadCard,
+.cpSectionBody,
+.cpGrid {
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* HERO */
+.cpHero {
+  position: relative;
+  background: var(--cp-surface);
+  border: 1px solid rgba(123, 44, 191, 0.12);
+  border-radius: 28px;
+  box-shadow: var(--cp-shadow);
+  padding: 18px 22px 16px;
+  margin-bottom: 20px;
+  overflow: visible;
+}
+
+.cpHeroTop {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.cpHeroIdentity h2 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 800;
+  color: var(--cp-text);
+}
+
+.cpHeroIdentity p {
+  margin: 6px 0 0;
+  font-size: 15px;
+  color: var(--cp-muted);
+}
+
+.cpHeroLogo {
+  width: 110px;
+  height: 110px;
+  border-radius: 999px;
+  background: #fff;
+  border: 4px solid #efe5f7;
+  box-shadow: 0 5px 12px rgba(123, 44, 191, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cpHeroLogo img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.cpHeroLogo span {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--cp-primary);
+}
+
+.cpHeroToast {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* .cpHeroToastInner {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--cp-success-bg);
+  color: var(--cp-success-text);
+  border-radius: 14px;
+  padding: 12px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+  white-space: nowrap;
+} */
+
+.cpHeroBottom {
+  margin-top: 16px;
+}
+
+.cpProgressMeta {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 14px;
+  color: var(--cp-muted);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.cpProgressBar {
+  width: 100%;
+  height: 12px;
+  background: #ebddf6;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.cpProgressFill {
+  height: 100%;
+  border-radius: 999px;
+  background: #003F51;
+}
+
+/* notices */
+.cpNotice {
+  background: #fff;
+  border: 1px solid var(--cp-border);
+  box-shadow: var(--cp-shadow);
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  color: var(--cp-text);
+  font-weight: 600;
+}
+
+.cpNoticeError {
+  background: #fff0f0;
+  border-color: #efc5c5;
+  color: #a53d3d;
+}
+
+.cpNoticeSuccess {
+  background: #e8f8f2;
+  border-color: #c7eadf;
+  color: #2d6b59;
+}
+
+/* sections */
+.cpSectionCard {
+  background: var(--cp-surface);
+  border: 1px solid rgba(123, 44, 191, 0.11);
+  border-radius: 26px;
+  box-shadow: var(--cp-shadow);
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+.cpSectionHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.cpSectionHead h3 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: var(--cp-text);
+  font-family: inherit;
+}
+
+.cpEditPill {
+  border: none;
+  background: #003F51;
+  color: #fff;
+  border-radius: 999px;
+  padding: 9px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 8px;
+ 
+  cursor: pointer;
+}
+.cpEditPill:hover{
+  /* box-shadow:  -2px 1px 11px 1px rgba(0,0,0,0.33); */
+  background-color: #086687;
+}
+.cpEditPill:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.cpSectionBody {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 18px;
+}
+
+.cpSectionAside {
+  padding-right: 16px;
+  border-right: 1px solid #eee5f5;
+}
+
+/* .cpAsideArt {
+  width: 100%;
+  height: 105px;
+  border-radius: 18px;
+  border: 1px dashed #dcc7ea;
+  background:
+    linear-gradient(135deg, rgba(123, 44, 191, 0.05), rgba(123, 44, 191, 0.01)),
+    #faf7fd;
+  position: relative;
+  margin-bottom: 16px;
+} */
+
+.cpAsideArt::before,
+.cpAsideArt::after {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(123, 44, 191, 0.14);
+  border-radius: 999px;
+}
+
+/* .cpAsideArt::before {
+  width: 70px;
+  height: 70px;
+  top: 16px;
+  left: 18px;
+} */
+
+/* .cpAsideArt::after {
+  width: 110px;
+  height: 110px;
+  right: -10px;
+  bottom: -20px;
+} */
+
+.cpSectionAside h4 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--cp-text);
+}
+
+.cpSectionAside p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--cp-muted);
+}
+
+.cpSectionContent {
+  
+  border: 1px solid #efe3f7;
+  border-radius: 22px;
+  padding: 16px;
+}
+
+/* form */
+.cpGrid {
+  display: grid;
+  gap: 14px;
+}
+
+.cpGrid2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.cpStack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cpField {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cpFieldFull {
+  width: 100%;
+}
+
+.cpLabel {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--cp-text);
+}
+
+.cpInputWrap {
+  position: relative;
+}
+
+.cpInputWrap.hasIcon .cpInput {
+  padding-right: 42px;
+}
+
+.cpInput,
+.cpSectionContent textarea,
+.cpSectionContent select {
+  width: 100%;
+  border: 1.5px solid #003F51;
+  background: #fff;
+  color: var(--cp-text);
+  border-radius: 12px;
+  padding: 13px 14px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.18s ease;
+}
+
+.cpInput:focus,
+.cpSectionContent textarea:focus,
+.cpSectionContent select:focus {
+  border-color: #003F51;
+  box-shadow: 0 0 2px 2px #F6F7F9;
+}
+
+.cpInput:disabled,
+.cpSectionContent textarea:disabled,
+.cpSectionContent select:disabled {
+  background: #F6F7F9;
+  color: #000;
+  cursor: not-allowed;
+}
+
+.cpInputIcon {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  color: #8b72a1;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.cpTextarea {
+  min-height: 92px;
+  resize: vertical;
+}
+
+.cpTextareaLg {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.cpCharCount {
+  margin-top: -2px;
+  text-align: right;
+  font-size: 12px;
+  color: var(--cp-muted);
+}
+
+/* upload */
+.cpUploadCard {
+  margin-top: 16px;
+  border: 1.5px dashed #cfaee1;
+  background: #fff;
+  border-radius: 18px;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 16px;
+  padding: 16px;
+  align-items: center;
+}
+
+.cpUploadPreview {
+  width: 150px;
+  height: 120px;
+  background: #faf7fd;
+  border: 1px dashed #d8bee9;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cpUploadPreview img {
+  width: 82px;
+  height: 82px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.cpLogoPlaceholder {
+  font-size: 13px;
+  color: var(--cp-muted);
+  font-weight: 700;
+}
+
+.cpUploadInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.cpUploadBtn {
+  border: none;
+  background: #003F51;
+  color: #fff;
+  padding: 11px 18px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cpUploadBtn.isDisabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.cpUploadText {
+  margin: 0;
+  font-size: 13px;
+  color: var(--cp-muted);
+  line-height: 1.5;
+}
+
+.cpFileName {
+  font-size: 13px;
+  color: var(--cp-text);
+  word-break: break-all;
+}
+
+.cpFileHidden {
+  display: none;
+}
+
+/* save button */
+.cpBottomSave {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.cpPrimaryBtn {
+  border: none;
+  background: #003F51;
+  color: #fff;
+  border-radius: 12px;
+  padding: 14px 24px;
+  font-size: 14px;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 12px 24px #F6F7F9;
+  cursor: pointer;
+}
+.cpPrimaryBtn:hover{
+  background-color: #086687;
+}
+.cpToast {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 9999;
+  min-width: 320px;
+  max-width: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
+  animation: cpToastSlideIn 0.25s ease;
+}
+
+.cpToastSuccess {
+  background: #d9f3ea;
+  border: 1px solid #b8e5d6;
+  color: #1d6b54;
+}
+
+.cpToastContent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.cpToastContent i {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.cpToastContent span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.cpToastClose {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.18s ease, transform 0.18s ease;
+}
+
+.cpToastClose:hover {
+  background: rgba(0, 0, 0, 0.06);
+  transform: scale(1.04);
+}
+
+
+.cpPrimaryBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.cpBottomBtn {
+  min-width: 240px;
+  justify-content: center;
+}
+
+/* responsive */
+@media (max-width: 1024px) {
+  .cpSectionBody {
+    grid-template-columns: 1fr;
+  }
+
+  .cpSectionAside {
+    border-right: none;
+    border-bottom: 1px solid #eee5f5;
+    padding-right: 0;
+    padding-bottom: 14px;
+  }
+
+  .cpHeroTop {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+
+  .cpHeroToast {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .cpPage {
+    padding: 16px 12px 32px;
+  }
+
+  .cpHeroIdentity h2 {
+    font-size: 24px;
+  }
+
+  .cpSectionHead h3 {
+    font-size: 24px;
+  }
+
+  .cpGrid2,
+  .cpUploadCard {
+    grid-template-columns: 1fr;
+  }
+
+  .cpUploadPreview {
+    width: 100%;
+  }
+
+  .cpProgressMeta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cpPrimaryBtn,
+  .cpBottomBtn {
+    width: 100%;
+  }
+}
+
+@keyframes cpToastSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) translateX(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .cpToast {
+    top: 16px;
+    right: 16px;
+    left: 16px;
+    min-width: 0;
+    max-width: none;
+  }
+}

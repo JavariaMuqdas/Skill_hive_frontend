@@ -1,0 +1,131 @@
+.tplClassicWrap{
+  width: 800px;
+  min-height: 1000px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,.08);
+  font-family: Arial, sans-serif;
+}
+
+.tplClassicLeft{
+  background: #1f2a35;
+  color: #fff;
+  padding: 18px;
+}
+
+.tplClassicPhoto{
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 14px auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid rgba(255,255,255,.25);
+}
+
+.tplClassicPhoto img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tplNoPhoto{
+  width: 100%;
+  height: 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size: 12px;
+  background: rgba(255,255,255,.15);
+}
+
+.tplClassicSideInfo{
+  font-size: 12px;
+  line-height: 1.5;
+  opacity: .9;
+}
+
+.tplClassicBlock{
+  margin-top: 18px;
+}
+
+.tplClassicH{
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: .04em;
+}
+
+.tplClassicBlock ul{
+  margin: 0;
+  padding-left: 18px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.tplClassicRight{
+  padding: 18px 22px;
+}
+
+.tplClassicTop{
+  border-bottom: 10px solid #5c97ad;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.tplClassicName{
+  font-size: 30px;
+  font-weight: 800;
+  color: #1f2a35;
+}
+
+.tplClassicTitle{
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a5560;
+}
+
+.tplClassicSection{
+  margin-top: 14px;
+}
+
+.tplClassicSecTitle{
+  font-size: 14px;
+  font-weight: 800;
+  color: #1f2a35;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+  padding-bottom: 6px;
+  margin-bottom: 8px;
+}
+
+.tplClassicSection p{
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 0;
+  color: #2c2c2c;
+}
+
+.tplClassicItem{
+  margin-bottom: 10px;
+}
+
+.tplClassicItemTitle{
+  font-size: 13px;
+  font-weight: 700;
+  color: #1f2a35;
+}
+
+.tplClassicItemSub{
+  font-size: 12px;
+  color: #4a5560;
+  margin-top: 2px;
+}
+
+.tplClassicBullets{
+  margin: 6px 0 0 18px;
+  font-size: 12px;
+  color: #2c2c2c;
+  line-height: 1.5;
+}

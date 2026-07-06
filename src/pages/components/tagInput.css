@@ -1,0 +1,21 @@
+.tagWrap { display: flex; flex-direction: column; gap: 6px; }
+.tagList {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  padding: 10px; border: 1px solid #e5e7eb; border-radius: 12px;
+  background: #fff;
+}
+.tag {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 10px; border-radius: 999px;
+  background: #f3f4f6; border: 1px solid #e5e7eb;
+  font-size: 13px;
+}
+.tagX {
+  border: none; background: transparent; cursor: pointer;
+  font-size: 16px; line-height: 1; padding: 0 2px;
+}
+.tagInput {
+  border: none; outline: none; min-width: 180px;
+  font-size: 14px; padding: 6px 4px; background: transparent;
+}
+.tagHint { font-size: 12px; color: #6b7280; }

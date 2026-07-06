@@ -1,0 +1,262 @@
+.applied-page {
+  padding: 24px;
+  background: #F6F7F9 ;
+  min-height: 100vh;
+}
+
+.applied-hero {
+  background: #F6FAFB;
+  border-radius: 24px 24px 0 0;
+  padding: 28px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.applied-title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 500;
+  color: #003F51;
+}
+
+.applied-subtitle {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #003F51;
+}
+
+.applied-searchWrap {
+  width: 300px;
+}
+
+.applied-search {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  font-size: 15px;
+  outline: none;
+  background: #ffffff;
+}
+.applied-search:hover{
+  box-shadow: #003F51!important 0px 2px 2px 0px;
+  border: 1px solid #003F51!important;
+}
+.applied-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 22px 32px;
+  background: #fff;
+  border-left: 1px solid #e9edf5;
+  border-right: 1px solid #e9edf5;
+}
+
+.applied-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.applied-chip strong {
+  font-weight: 700;
+}
+
+.applied-chip.active {
+  background: #edf4ff;
+  color: #2563eb;
+}
+
+.applied-chip.review {
+  color: #3b82f6;
+}
+
+.applied-chip.accepted {
+  color: #16a34a;
+}
+
+.applied-chip.shortlisted {
+  color: #9333ea;
+}
+
+.applied-chip.rejected {
+  color: #ef4444;
+}
+
+.applied-chip.withdrawn {
+  color: #6b7280;
+}
+
+.applied-tableWrap {
+  background: #fff;
+  border: 1px solid #e9edf5;
+  border-top: none;
+  border-radius: 0 0 24px 24px;
+  overflow: hidden;
+}
+
+.applied-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.applied-table thead th {
+  text-align: left;
+  padding: 22px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #003F51;
+  background: #fff;
+  border-top: 1px solid #eef2f7;
+  border-bottom: 1px solid #eef2f7;
+}
+
+.applied-table tbody td {
+  padding: 22px 20px;
+  border-bottom: 1px solid #eef2f7;
+  vertical-align: middle;
+}
+
+.job-cell,
+.company-cell {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.job-icon,
+.company-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size:20px;
+}
+
+.job-icon {
+  background: #F6F7F9 ;
+  color: #003F51;
+}
+
+.company-logo {
+  background: #F6F7F9 ;
+  color: #003F51;
+}
+
+.job-title,
+.company-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.job-meta,
+.company-meta,
+.job-date {
+  margin-top: 4px;
+  font-size: 16px!important;
+  color: #666666;
+}
+
+.applied-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.applied-status-review {
+  background: #e9f1ff;
+  color: #2563eb;
+}
+
+.applied-status-accepted {
+  background: #eafaf0;
+  color: #16a34a;
+}
+
+.applied-status-shortlisted {
+  background: #f3e8ff;
+  color: #9333ea;
+}
+
+.applied-status-rejected {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.applied-status-withdrawn {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.action-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.view-btn {
+  min-width: 96px;
+  height: 44px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 12px;
+  background: #003F51!important;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.view-btn:hover{
+  background-color: #9462A1;
+}
+
+.more-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid #dbe3ef;
+  background: #fff;
+  color: #6b7280;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.applied-footer {
+  padding: 18px 20px;
+  font-size: 14px;
+  color: #6b7280;
+  background: #fff;
+}
+
+.sMsg {
+  margin-top: 16px;
+  font-size: 15px;
+  color: #6b7280;
+}
+
+.sErr {
+  color: #dc2626;
+}
+
+.empty-state {
+  padding: 40px 24px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 15px;
+}
